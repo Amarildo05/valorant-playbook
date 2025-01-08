@@ -1,15 +1,16 @@
-import Agents from "../components/agents/Agents";
-import Hero from "../components/homepage/Hero";
-import Maps from "../components/maps/Maps";
-import Weapons from "../components/weapons/Weapons";
+import AgentsSection from "../components/homepage/AgentsSection";
+import HeroSection from "../components/homepage/HeroSection";
+import MapsSection from "../components/homepage/MapsSection";
+import WeaponsSection from "../components/homepage/WeaponsSection";
+import "./Homepage.css";
 
 export default function Homepage() {
   return (
     <>
-      <Hero />
-      <Agents />
-      <Weapons />
-      <Maps />
+      <HeroSection />
+      <AgentsSection />
+      <WeaponsSection />
+      <MapsSection />
     </>
   );
 }

@@ -1,0 +1,101 @@
+svg {
+  margin-right: 15%;
+  width: 800px;
+  opacity: 0.7;
+}
+
+h1 {
+  margin-top: -30%;
+  margin-right: 30%;
+  opacity: 0.6;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+button {
+  font-family: DINNextW1G, arial, georgia, sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  border: none;
+  border-radius: 15% 0% 0% 15%;
+  width: 170px;
+  height: 80px;
+  padding: 10%;
+  background-color: gray;
+  opacity: 0.7;
+  transition: opacity 400ms;
+  border-left: 7px solid #880808;
+}
+
+button:hover {
+  opacity: 0.9;
+  color: whitesmoke;
+  border-left: 5px solid rgb(207, 207, 207);
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/valorant.jpg);
+  background-size: cover;
+  margin-bottom: 6px;
+}
+
+.agents {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/agents.jpg);
+  background-size: cover;
+  margin-bottom: 6px;
+}
+
+.weapons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/weapons.jpg);
+  background-size: cover;
+  margin-bottom: 6px;
+}
+
+.maps {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/maps.webp);
+  background-size: cover;
+}
+
+/*media queries for mobile devices */
+@media (max-width: 768px) {
+  .game,
+  .agents,
+  .weapons,
+  .maps {
+    background-position: center center; /* Ensure background stays centered */
+    background-size: cover; /* Make sure background images still cover the screen */
+  }
+}
+
+/*media queries for very small devices */
+@media (max-width: 480px) {
+  .game,
+  .agents,
+  .weapons,
+  .maps {
+    background-position: center top; /* Adjust background position for smaller screens */
+    background-size: cover; /* Ensure background images fill the screen */
+  }
+}
