@@ -1,4 +1,4 @@
-export default function Agents() {
+export default function AgentsContent() {
   return (
     <div>
       Agents

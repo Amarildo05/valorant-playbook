@@ -1,4 +1,4 @@
-export default function Weapons() {
+export default function WeaponsContent() {
   return (
     <div>
       Weapons

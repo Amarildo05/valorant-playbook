@@ -1,4 +1,4 @@
-export default function Maps() {
+export default function MapsContent() {
   return (
     <div>
       Maps

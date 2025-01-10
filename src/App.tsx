@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import Game from "./components/game/Game";
-import Agents from "./components/agents/Agents";
-import Maps from "./components/maps/Maps";
-import Weapons from "./components/weapons/Weapons";
+import Home from "./pages/Home";
+import Game from "./pages/Game";
+import Agents from "./pages/Agents";
+import Maps from "./pages/Maps";
+import Weapons from "./pages/Weapons";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homepage />,
+        element: <Home />,
       },
       {
         path: "/game",

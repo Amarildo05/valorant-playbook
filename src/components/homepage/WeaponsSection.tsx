@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 export default function WeaponsSection() {
   return (
     <div className="weapons">
-      <h1 id="h1-weapons">WEAPONS</h1>
+      <h1 className="homepage-title">WEAPONS</h1>
       <Link to="/weapons">
-        <button>View Weapons &gt;</button>
+        <button className="homepage-button">View Weapons &gt;</button>
       </Link>
     </div>
   );
