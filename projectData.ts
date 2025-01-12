@@ -1,4 +1,4 @@
-import { GameData } from "./types";
+import { AgentsData, GameData, MapsData, Weapon } from "./types";
 
 export const gameData: GameData = {
   title: "VALORANT",
@@ -15,4 +15,269 @@ export const gameData: GameData = {
   ],
   videoUrl: "https://www.youtube.com/embed/IhhjcB2ZjIM?si=J8sfHNtaQoWJ78Y0",
   backgroundVideo: "/video/background-video.mp4",
+};
+
+export const agentsData: AgentsData = {
+  agents: [
+    {
+      id: "brimstone",
+      image: "/agents/brimstone.jpg",
+      info: {
+        name: "BRIMSTONE",
+        description:
+          "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
+      },
+    },
+    {
+      id: "phoenix",
+      image: "/agents/phoenix.png",
+      info: {
+        name: "PHOENIX",
+        description:
+          "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms.",
+      },
+    },
+    {
+      id: "sage",
+      image: "/agents/sage.jpg",
+      info: {
+        name: "SAGE",
+        description:
+          "The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
+      },
+    },
+    {
+      id: "sova",
+      image: "/agents/sova.jpg",
+      info: {
+        name: "SOVA",
+        description:
+          "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
+      },
+    },
+    {
+      id: "cypher",
+      image: "/agents/cypher.jpg",
+      info: {
+        name: "CYPHER",
+        description:
+          "The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.",
+      },
+    },
+    {
+      id: "reyna",
+      image: "/agents/reyna.jpg",
+      info: {
+        name: "REYNA",
+        description:
+          "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.",
+      },
+    },
+    {
+      id: "omen",
+      image: "/agents/omenn.png",
+      info: {
+        name: "OMEN",
+        description:
+          "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.",
+      },
+    },
+    {
+      id: "jett",
+      image: "/agents/jett.jpg",
+      info: {
+        name: "JETT",
+        description:
+          "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
+      },
+    },
+    {
+      id: "chamber",
+      image: "/agents/chamber.jpg",
+      info: {
+        name: "CHAMBER",
+        description:
+          "Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
+      },
+    },
+    {
+      id: "kayo",
+      image: "/agents/kayo.png",
+      info: {
+        name: "KAY/O",
+        description:
+          "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
+      },
+    },
+    {
+      id: "fade",
+      image: "/agents/fade.jpg",
+      info: {
+        name: "FADE",
+        description:
+          "Turkish bounty hunter, Fade, unleashes the power of raw nightmares to seize enemy secrets. Attuned with terror itself, she hunts targets and reveals their deepest fears before crushing them in the dark.",
+      },
+    },
+    {
+      id: "viper",
+      image: "/agents/viper.webp",
+      info: {
+        name: "VIPER",
+        description:
+          "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
+      },
+    },
+  ],
+};
+
+export const weapons: Weapon[] = [
+  {
+    id: "ghost",
+    image: "/weapons/ghost.png",
+    info: {
+      name: "GHOST",
+      description:
+        "The Ghost is accurate and carries a large magazine if you miss. Distant targets require a controlled fire rate. Quickly tap the trigger when you can see the whites of their eyes.",
+    },
+  },
+  {
+    id: "frenzy",
+    image: "/weapons/frenzy.png",
+    info: {
+      name: "FRENZY",
+      description:
+        "Lightweight machine pistol that excels at firing on the move. Its high rate-of-fire can be difficult to control, so try short bursts at medium ranges.",
+    },
+  },
+  {
+    id: "sheriff",
+    image: "/weapons/sheriff.png",
+    info: {
+      name: "SHERIFF",
+      description:
+        "Its high-impact rounds pack a ton of recoil and require true grit to master. Wield the Sheriff right, and your enemies will know they were expendable.",
+    },
+  },
+  {
+    id: "spectre",
+    image: "/weapons/spectre.png",
+    info: {
+      name: "SPECTRE",
+      description:
+        "A jack-of-all-trades weapon with a great balance of damage, fire rate, and accuracy—at both short and mid range. It haunts the corners of every map and requires only steady aim to drop foes at long distance.",
+    },
+  },
+  {
+    id: "bucky",
+    image: "/weapons/bucky.png",
+    info: {
+      name: "BUCKY",
+      description:
+        "Heavy but stable, Bucky’s primary fire is for holding tight corners or charging close quarters. Alternate fire strikes targets at medium range.",
+    },
+  },
+  {
+    id: "phantom",
+    image: "/weapons/phantom.png",
+    info: {
+      name: "PHANTOM",
+      description:
+        "Go full auto for anyone who tests you up close and short controlled bursts scramble enemies from anywhere. Best when fired while stationary.",
+    },
+  },
+  {
+    id: "vandal",
+    image: "/weapons/vandal.png",
+    info: {
+      name: "VANDAL",
+      description:
+        "The Vandal retains high damage over distance and rewards those who focus single shots at a target’s head. Extended fire results in less stability, however.",
+    },
+  },
+  {
+    id: "marshal",
+    image: "/weapons/marshal.png",
+    info: {
+      name: "MARSHAL",
+      description:
+        "A nimble lever-action sniper rifle with a single zoom that can keep bullish enemies at bay. A slow rate of fire means you have to either hit the mark or leave yourself open to attacks.",
+    },
+  },
+  {
+    id: "operator",
+    image: "/weapons/operator.png",
+    info: {
+      name: "OPERATOR",
+      description:
+        "A fierce bolt-action sniper rifle with high-powered dual zoom. Extremely immobile but fires an incredibly powerful round that can devastate a team with one shot.",
+    },
+  },
+  {
+    id: "odin",
+    image: "/weapons/odin.png",
+    info: {
+      name: "ODIN",
+      description:
+        "Suppressive, high damage fire with surprising stability. Spray enemies at short range and use alt. fire to make yourself a living turret.",
+    },
+  },
+];
+
+export const mapData: MapsData = {
+  maps: [
+    {
+      id: "sunset",
+      image: "/maps/sunset.webp",
+      info: {
+        name: "SUNSET",
+        description:
+          "A disaster at a local kingdom facility threatens to engulf the whole neighborhood. Stop at your favorite food truck then fight across the city in this traditional three lane map.",
+      },
+    },
+    {
+      id: "lotus",
+      image: "/maps/lotus.webp",
+      info: {
+        name: "LOTUS",
+        description:
+          "A mysterious structure housing an astral conduit radiates with ancient power. Great stone doors provide a variety of movement opportunities and unlock the paths to three mysterious sites.",
+      },
+    },
+    {
+      id: "haven",
+      image: "/maps/haven.webp",
+      info: {
+        name: "HAVEN",
+        description:
+          "Beneath a forgotten monastery, a clamour emerges from rival Agents clashing to control three sites. There’s more territory to control, but defenders can use the extra real estate for aggressive pushes.",
+      },
+    },
+    {
+      id: "breeze",
+      image: "/maps/breeze.webp",
+      info: {
+        name: "BREEZE",
+        description:
+          "Take in the sights of historic ruins or seaside caves on this tropical paradise. But bring some cover. You'll need them for the wide open spaces and long range engagements. Watch your flanks and this will be a Breeze.",
+      },
+    },
+    {
+      id: "bind",
+      image: "/maps/bind.webp",
+      info: {
+        name: "BIND",
+        description:
+          "Two sites. No middle. Gotta pick left or right. What’s it going to be then? Both offer direct paths for attackers and a pair of one-way teleporters make it easier to flank.",
+      },
+    },
+    {
+      id: "ascent",
+      image: "/maps/ascent.webp",
+      info: {
+        name: "ASCENT",
+        description:
+          "An open playground for small wars of position and attrition divide two sites on Ascent. Each site can be fortified by irreversible bomb doors; once they’re down, you’ll have to destroy them or find another way. Yield as little territory as possible.",
+      },
+    },
+  ],
 };
