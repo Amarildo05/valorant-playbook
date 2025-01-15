@@ -34,12 +34,7 @@
   text-shadow: 0 0 15px black, 0 0 20px black, 0 0 30px black;
   margin-bottom: 2%;
   color: #fff;
-  background-color: rgba(
-    108,
-    108,
-    108,
-    0.5
-  ); /* semi-transparent background */
+  background-color: rgba(108, 108, 108, 0.5); /* semi-transparent background */
   padding: 10px;
   border-radius: 10px;
 }
