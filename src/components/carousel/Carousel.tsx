@@ -38,7 +38,7 @@ export default function Carousel({
   useEffect(() => {
     const intervalId = setInterval(() => {
       moveSlider(1);
-    }, 0);
+    }, 12000);
 
     return () => clearInterval(intervalId);
   }, []); // Runs once on mount

@@ -127,6 +127,123 @@ export const agentsData: AgentsData = {
           "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
       },
     },
+    {
+      id: "killjoy",
+      image: "/agents/killjoy.webp",
+      info: {
+        name: "KILLJOY",
+        description:
+          "The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. If the damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them.",
+      },
+    },
+    {
+      id: "breach",
+      image: "/agents/breach.jpg",
+      info: {
+        name: "BREACH",
+        description:
+          "Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
+      },
+    },
+    {
+      id: "raze",
+      image: "/agents/raze.webp",
+      info: {
+        name: "RAZE",
+        description:
+          "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of boom.",
+      },
+    },
+    {
+      id: "skye",
+      image: "/agents/skye.jpg",
+      info: {
+        name: "SKYE",
+        description:
+          "Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye’s side.",
+      },
+    },
+    {
+      id: "yoru",
+      image: "/agents/yoru.jpg",
+      info: {
+        name: "YORU",
+        description:
+          "Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
+      },
+    },
+    {
+      id: "astra",
+      image: "/agents/astra.jpg",
+      info: {
+        name: "ASTRA",
+        description:
+          "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.",
+      },
+    },
+    {
+      id: "harbor",
+      image: "/agents/harbor.webp",
+      info: {
+        name: "HARBOR",
+        description:
+          "Hailing from India’s coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
+      },
+    },
+    {
+      id: "gekko",
+      image: "/agents/gekko.jpg",
+      info: {
+        name: "GEKKO",
+        description:
+          "Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.",
+      },
+    },
+    {
+      id: "deadlock",
+      image: "/agents/deadlock.webp",
+      info: {
+        name: "DEADLOCK",
+        description:
+          "Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.",
+      },
+    },
+    {
+      id: "iso",
+      image: "/agents/iso.png",
+      info: {
+        name: "ISO",
+        description:
+          "Chinese fixer for hire, Iso falls into a flow state to dismantle the opposition. Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.",
+      },
+    },
+    {
+      id: "clove",
+      image: "/agents/clove.png",
+      info: {
+        name: "CLOVE",
+        description:
+          "Scottish troublemaker Clove makes mischief for enemies in both the heat of combat and the cold of death. The young immortal keeps foes guessing, even from beyond the grave, their return to the living only ever a moment away.",
+      },
+    },
+    {
+      id: "vyse",
+      image: "/agents/vyse.webp",
+      info: {
+        name: "VYSE",
+        description:
+          "Metallic mastermind Vyse unleashes liquid metal to isolate, trap, and disarm her enemies. Through cunning and manipulation, she forces all who oppose her to fear the battlefield itself.",
+      },
+    },
+    {
+      id: "tejo",
+      image: "/agents/tejo.jpg",
+      info: {
+        name: "TEJO",
+        description:
+          "A veteran intelligence consultant from Colombia, Tejo's ballistic guidance system pressures the enemy to relinquish their ground - or their lives. His targeted strikes keep opponents off balance and under his heel.",
+      },
+    },
   ],
 };
 
@@ -221,6 +338,51 @@ export const weapons: Weapon[] = [
         "Suppressive, high damage fire with surprising stability. Spray enemies at short range and use alt. fire to make yourself a living turret.",
     },
   },
+  {
+    id: "stinger",
+    image: "/weapons/stinger.png",
+    info: {
+      name: "STINGER",
+      description:
+        "A rapid-fire submachine gun with a high rate of fire and a low price. It’s great for close-range engagements but hard to control over distance.",
+    },
+  },
+  {
+    id: "bulldog",
+    image: "/weapons/bulldog.png",
+    info: {
+      name: "BULLDOG",
+      description:
+        "A versatile rifle with a selectable burst-fire mode. It excels at medium range, but you’ll need good aim to make the most of it.",
+    },
+  },
+  {
+    id: "guardian",
+    image: "/weapons/guardian.png",
+    info: {
+      name: "GUARDIAN",
+      description:
+        "A semi-automatic rifle with high damage. Ideal for precision players who can land headshots, but it's slow to fire and harder to control.",
+    },
+  },
+  {
+    id: "ares",
+    image: "/weapons/ares.png",
+    info: {
+      name: "ARES",
+      description:
+        "A light machine gun with a decent rate of fire and accuracy. The Ares is effective for suppressing enemy movement but requires careful control to avoid recoil.",
+    },
+  },
+  {
+    id: "classic",
+    image: "/weapons/classic.png",
+    info: {
+      name: "CLASSIC",
+      description:
+        "A standard sidearm with decent accuracy and range. It’s reliable in close quarters and can also be used with its alternate fire to quickly blast enemies up close.",
+    },
+  },
 ];
 
 export const mapData: MapsData = {
@@ -277,6 +439,42 @@ export const mapData: MapsData = {
         name: "ASCENT",
         description:
           "An open playground for small wars of position and attrition divide two sites on Ascent. Each site can be fortified by irreversible bomb doors; once they’re down, you’ll have to destroy them or find another way. Yield as little territory as possible.",
+      },
+    },
+    {
+      id: "icebox",
+      image: "/maps/icebox.webp",
+      info: {
+        name: "ICEBOX",
+        description:
+          "A frigid battlefield surrounded by industrial structures, where verticality is key. Tight spaces and narrow sightlines make it a perfect spot for close-quarters combat and strategic plays.",
+      },
+    },
+    {
+      id: "split",
+      image: "/maps/split.webp",
+      info: {
+        name: "SPLIT",
+        description:
+          "A fast-paced map with tight chokepoints and lots of verticality. A strong focus on control over mid allows teams to split between two sites, using teleporters and high ground to their advantage.",
+      },
+    },
+    {
+      id: "pearl",
+      image: "/maps/pearl.webp",
+      info: {
+        name: "PEARL",
+        description:
+          "A sunken city map surrounded by water, with clean pathways and many open spaces. Tactics and teamwork are required to control the high ground and navigate tight corridors.",
+      },
+    },
+    {
+      id: "fracture",
+      image: "/maps/fracture.webp",
+      info: {
+        name: "FRACTURE",
+        description:
+          "A broken facility in the middle of an urban wasteland, where attackers can choose to approach from multiple angles. Its unique structure offers a mix of open spaces and tight chokepoints for diverse playstyles.",
       },
     },
   ],
