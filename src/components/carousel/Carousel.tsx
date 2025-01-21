@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Agent, Weapon, Map } from "../../../types";
+import "./carousel.css";
+import { Link } from "react-router-dom";
 
 // Generic type for carousel items
 type CarouselItem = Agent | Weapon | Map;
@@ -15,11 +17,6 @@ interface CarouselProps {
 
 export default function Carousel({
   items,
-  sliderClass,
-  liClass,
-  backgroundClass,
-  nameClass,
-  descriptionClass,
 }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const agentSliderRef = useRef<HTMLUListElement | null>(null);
@@ -41,7 +38,7 @@ export default function Carousel({
     }, 12000);
 
     return () => clearInterval(intervalId);
-  }, []); // Runs once on mount
+  }); // Runs once on mount
 
   // Update the scroll position when the index changes
   useEffect(() => {
@@ -52,7 +49,10 @@ export default function Carousel({
   }, [currentIndex]);
 
   return (
-    <div>
+    <div className="carousel-container">
+      <Link to="/">
+        <button className="back-button">&#8249;</button>
+      </Link>
       <button
         className="slide-btn"
         id="slide-btn-left"
@@ -67,16 +67,16 @@ export default function Carousel({
       >
         &#8250;
       </button>
-      <ul className={sliderClass} ref={agentSliderRef}>
+      <ul className="carousel-slider" ref={agentSliderRef}>
         {items.map((item) => (
-          <li className={liClass} key={item.id}>
+          <li className="carousel-li" key={item.id}>
             <div
-              className={backgroundClass}
+              className="carousel-item"
               style={{ backgroundImage: `url(${item.image})` }}
             >
-              <div className={`${backgroundClass}-info`}>
-                <h1 className={nameClass}>{item.info.name}</h1>
-                <p className={descriptionClass}>{item.info.description}</p>
+              <div className="carousel-item-info">
+                <h1 className="carousel-name">{item.info.name}</h1>
+                <p className="carousel-description">{item.info.description}</p>
               </div>
             </div>
           </li>

@@ -25,6 +25,7 @@
   cursor: pointer;
   opacity: 0.5;
   transition: opacity 400ms;
+  z-index: 1;
 }
 
 .slide-btn:hover {
@@ -61,17 +62,19 @@
 }
 
 .carousel-name {
+  padding: 5% 0 0 2%;
   color: whitesmoke;
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 80px;
   text-shadow: 0 0 5px black, 0 0 7px black;
 }
 
 .carousel-description {
+  padding: 8% 0 0 3%;
   color: whitesmoke;
   width: 45%;
   font-size: xx-large;
-  opacity: 0.8;
+  opacity: 0.9;
   line-height: 1.2;
   text-shadow: 0 0 5px black, 0 0 7px black;
 }

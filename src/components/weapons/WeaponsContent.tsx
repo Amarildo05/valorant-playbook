@@ -1,4 +1,3 @@
-import "../carousel.css";
 import { weapons } from "../../../projectData";
 import Carousel from "../carousel/Carousel";
 

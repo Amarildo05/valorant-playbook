@@ -1,4 +1,3 @@
-import "../carousel.css";
 import { mapData } from "../../../projectData";
 import Carousel from "../carousel/Carousel";
 
