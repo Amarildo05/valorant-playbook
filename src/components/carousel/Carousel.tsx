@@ -8,16 +8,9 @@ type CarouselItem = Agent | Weapon | Map;
 
 interface CarouselProps {
   items: CarouselItem[]; // Array of items, could be Agent, Weapon, or Map
-  sliderClass: string;
-  liClass: string;
-  backgroundClass: string;
-  nameClass: string;
-  descriptionClass: string;
 }
 
-export default function Carousel({
-  items,
-}: CarouselProps) {
+export default function Carousel({ items }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const agentSliderRef = useRef<HTMLUListElement | null>(null);
 
@@ -31,25 +24,28 @@ export default function Carousel({
     });
   };
 
-  // Auto slide every 8 seconds
+  // Auto slide every 12 seconds
   useEffect(() => {
     const intervalId = setInterval(() => {
       moveSlider(1);
     }, 12000);
 
     return () => clearInterval(intervalId);
-  }); // Runs once on mount
+  }, []); // Added dependency array to ensure it runs only once on mount
 
   // Update the scroll position when the index changes
   useEffect(() => {
     if (agentSliderRef.current) {
       const offset = agentSliderRef.current.clientWidth * currentIndex;
-      agentSliderRef.current.scrollLeft = offset;
+      agentSliderRef.current.scrollTo({
+        left: offset,
+        behavior: "smooth",
+      });
     }
   }, [currentIndex]);
 
   return (
-    <div className="carousel-container">
+    <div>
       <Link to="/">
         <button className="back-button">&#8249;</button>
       </Link>
