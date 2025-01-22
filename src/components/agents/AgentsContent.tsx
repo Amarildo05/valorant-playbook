@@ -5,11 +5,6 @@ export default function AgentsContent() {
   return (
     <Carousel
       items={agentsData.agents}
-      sliderClass="carousel-slider"
-      liClass="carousel-li"
-      backgroundClass="carousel-item"
-      nameClass="carousel-name"
-      descriptionClass="carousel-description"
     />
   );
 }
