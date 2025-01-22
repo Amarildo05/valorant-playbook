@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Agent, Weapon, Map } from "../../../types";
 import "./carousel.css";
 import { Link } from "react-router-dom";
@@ -14,15 +14,15 @@ export default function Carousel({ items }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const agentSliderRef = useRef<HTMLUListElement | null>(null);
 
-  // Move the slider left or right
-  const moveSlider = (direction: number) => {
+  // Use useCallback to memoize moveSlider and avoid unnecessary re-renders
+  const moveSlider = useCallback((direction: number) => {
     setCurrentIndex((prevIndex) => {
       const newIndex = prevIndex + direction;
       if (newIndex < 0) return items.length - 1;
       if (newIndex >= items.length) return 0;
       return newIndex;
     });
-  };
+  }, [items.length]); // Make sure to include items.length in the dependency array
 
   // Auto slide every 12 seconds
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Carousel({ items }: CarouselProps) {
     }, 12000);
 
     return () => clearInterval(intervalId);
-  }, []); // Added dependency array to ensure it runs only once on mount
+  }, [moveSlider]); // MoveSlider is now a dependency
 
   // Update the scroll position when the index changes
   useEffect(() => {
