@@ -4,6 +4,23 @@
   opacity: 0.9;
 }
 
+/* Media queries for medium devices (768px and below) */
+@media (max-width: 768px) {
+  .homepage-svg {
+    margin-top: 10%; /* Adjust this value to move it further down or up as needed */
+    margin-left: 6%;
+  }
+}
+
+/* Media queries for very small devices (480px and below) */
+@media (max-width: 480px) {
+  .homepage-svg {
+    margin-top: 30%; /* Move it further down for very small screens */
+    margin-left: 6%;
+    opacity: 1;
+  }
+}
+
 .homepage-title {
   color: white;
   opacity: 0.7;
@@ -15,6 +32,7 @@
   margin-top: 1%;
 }
 
+/* Buttons */
 .homepage-button {
   font-family: DINNextW1G, arial, georgia, sans-serif;
   font-size: medium;
@@ -36,6 +54,7 @@
   border-left: 5px solid rgb(207, 207, 207);
 }
 
+/* Backgrounds */
 .game,
 .agents,
 .weapons,
@@ -45,7 +64,6 @@
   justify-content: end;
   width: 100vw;
   height: 100vh;
-  background-image: url(/valorant.jpg);
   background-size: cover;
   margin-bottom: 6px;
 }
@@ -66,8 +84,21 @@
   background-image: url(/maps.webp);
 }
 
-/*media queries for mobile devices */
+/* Media queries for mobile devices */
 @media (max-width: 768px) {
+  .homepage-title {
+    font-size: 50px;
+    padding-left: 20%;
+    margin-top: 3%;
+  }
+
+  .homepage-button {
+    font-size: 14px;
+    width: 150px;
+    height: 60px;
+    padding: 5%;
+  }
+
   .game,
   .agents,
   .weapons,
@@ -77,8 +108,21 @@
   }
 }
 
-/*media queries for very small devices */
+/* Media queries for very small devices */
 @media (max-width: 480px) {
+  .homepage-title {
+    font-size: 40px;
+    padding-left: 35%;
+    margin-top: 5%;
+  }
+
+  .homepage-button {
+    font-size: 12px;
+    width: 130px;
+    height: 50px;
+    padding: 3%;
+  }
+
   .game,
   .agents,
   .weapons,
