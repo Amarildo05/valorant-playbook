@@ -79,3 +79,17 @@
   line-height: 1.2;
   text-shadow: 0 0 5px black, 0 0 7px black;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .carousel-name {
+    font-size: 40px;
+    padding: 35% 0 0 6%;
+  }
+
+  .carousel-description {
+    font-size: larger;
+    width: 80%;
+    padding: 5% 0 0 7%;
+  }
+}
