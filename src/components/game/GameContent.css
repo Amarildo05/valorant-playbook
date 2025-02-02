@@ -60,40 +60,40 @@ iframe {
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .game-title {
-    font-size: 40px; /* Smaller title for mobile */
+    font-size: 40px;
   }
 
   .game-content p {
-    width: 90%; /* More flexible width on smaller screens */
-    font-size: 1.1rem; /* Slightly smaller font size */
+    width: 90%;
+    font-size: 1.1rem;
   }
 
   iframe {
     margin-top: 2%;
     margin-bottom: 4%;
-    border: 5px solid transparent; /* Smaller border on mobile */
-    width: 90%; /* Make iframe fill available width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure iframe does not overflow */
+    border: 5px solid transparent;
+    width: 90%;
+    height: 250px;
+    max-width: 100%;
   }
 }
 
 /* For very small screens (like phones in portrait mode) */
 @media screen and (max-width: 480px) {
   .game-title {
-    font-size: 30px; /* Even smaller title for very small screens */
+    font-size: 30px;
   }
 
   .game-content p {
-    width: 90%; /* Full width for paragraphs */
-    font-size: 1rem; /* Further reduce the font size */
+    width: 90%;
+    font-size: 1rem;
   }
 
   iframe {
     margin-top: 1%;
     margin-bottom: 3%;
-    width: 90%; /* Ensure iframe is responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Prevent overflow */
+    width: 90%;
+    height: 200px;
+    max-width: 100%;
   }
 }
