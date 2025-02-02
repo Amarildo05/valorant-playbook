@@ -103,4 +103,18 @@
     padding-top: 2%;
     padding-bottom: 1%;
   }
+
+  .slide-btn {
+    height: 45px;
+    width: 24px;
+    font-size: 36px;
+  }
+
+  #slide-btn-left {
+    padding-left: 3px;
+  }
+
+  #slide-btn-right {
+    padding-right: 3px;
+  }
 }
