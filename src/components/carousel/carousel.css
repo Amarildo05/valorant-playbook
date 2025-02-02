@@ -93,14 +93,14 @@
   }
 
   .carousel-name {
-    font-size: 2rem; /* Adjust the font size */
-    padding-top: 20%; /* Center vertically with some space at the top */
+    font-size: 1.8rem;
+    padding-top: 15%;
   }
 
   .carousel-description {
-    font-size: 1.2rem; /* Adjust description size */
+    font-size: 1rem;
     width: 90%;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom: 1%;
   }
 }
